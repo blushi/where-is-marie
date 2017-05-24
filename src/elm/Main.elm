@@ -37,7 +37,7 @@ renderVideosList list =
 
 setMsg id =
   case id of
-    "l3" -> SetTrue
+    3 -> SetTrue
     _ -> SetFalse
 
 renderLayoutsList list =
@@ -58,6 +58,6 @@ view model =
           , div
             [ class "videos-container"] [
             renderVideosList (List.range 0 11)
-            , renderLayoutsList ["l0","l1","l2","l3","l4","l5","l6","l7","l8","l9", "l10", "l11"]
+            , renderLayoutsList (List.range 0 11)
             ]
   ]
