@@ -1,5 +1,69 @@
-$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
-@import '~bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
-@import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+
+.ytp-watermark {
+  visibility: hidden !important;
+}
+
+body {
+  background-color: black;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.container {
+  text-align: center;
+
+  .title {
+    padding-top: 30px;
+    color: white;
+    font-size: 24px;
+
+    .crossed {
+      color: #ececec;
+    }
+  }
+
+  .result {
+    height: 20px;
+    color: white;
+
+    &.false {
+      background-color: #e7271e;
+    }
+
+    &.true {
+      background-color: #3e4252;
+    }
+  }
+
+  .videos-container {
+    position: relative;
+    margin-top: 30px;
+
+    .layouts-container {
+      position: absolute;
+      top: 0;
+
+      .layout {
+        display: inline-block;
+        cursor: pointer;
+        z-index: 100;
+        width: 280px;
+        height: 158px;
+      }
+    }
+  }
+}
+
+
 
 // can add Boostrap overrides, additional Sass/CSS below...

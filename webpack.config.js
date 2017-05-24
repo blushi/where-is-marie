@@ -81,7 +81,12 @@ if ( TARGET_ENV === 'development' ) {
             'postcss-loader',
             'sass-loader'
           ]
-        }
+        },
+        {
+          test: /\.(js)$/,
+          loader: 'babel-loader',
+          exclude: /node_modules/,
+        },
       ]
     }
 
@@ -110,7 +115,12 @@ if ( TARGET_ENV === 'production' ) {
             'postcss-loader',
             'sass-loader'
           ])
-        }
+        },
+        {
+          test: /\.(js)$/,
+          loader: 'babel-loader',
+          exclude: /node_modules/,
+        },
       ]
     },
 
